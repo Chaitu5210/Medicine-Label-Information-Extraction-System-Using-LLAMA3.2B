@@ -4,6 +4,6 @@ Tablet-Insight-Engine is an AI-powered system that scans tablets (such as medica
 # Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/TabuScan.git
+git clone https://github.com/Chaitu5210/Tablet-Insight-Engine.git
 cd TabuScan
 pip install -r requirements.txt
