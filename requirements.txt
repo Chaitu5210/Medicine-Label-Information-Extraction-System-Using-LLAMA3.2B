@@ -6,3 +6,5 @@ Pillow==10.0.0
 os
 io
 datetime
+cv2
+matplotlib
