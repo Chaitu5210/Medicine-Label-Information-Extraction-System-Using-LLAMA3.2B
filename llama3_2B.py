@@ -34,3 +34,4 @@ def llama_model(text,model):
     if output:
         print("Model Output:")
         print(output)
+    return output
