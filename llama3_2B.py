@@ -29,9 +29,8 @@ def run_ollama_model(model_name, input_text):
 
 
 def llama_model(text,model):
+    print()
+    print("----------------------------------------------------------------------------------------")
+    print()
     output = run_ollama_model(model, text)
-    
-    if output:
-        print("Model Output:")
-        print(output)
     return output
