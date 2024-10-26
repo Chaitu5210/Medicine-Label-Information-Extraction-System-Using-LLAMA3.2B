@@ -19,7 +19,7 @@ def preprocessing(image_path):
         sharpened_image = cv2.filter2D(gray_image, -1, sharpen_kernel)
 
         # Save the processed image
-        processed_image_path = 'processed_image_with_text.jpg'
+        processed_image_path = 'Saved_Images/processed_image_with_text.jpg'
         cv2.imwrite(processed_image_path, sharpened_image)
         print(f"Processed image saved at {processed_image_path}")
 
@@ -29,11 +29,13 @@ def preprocessing(image_path):
         axs[0, 0].set_title("Original Image")
         axs[0, 1].imshow(gray_image, cmap='gray')
         axs[0, 1].set_title("Grayscale Image")
-        axs[1, 2].imshow(sharpened_image, cmap='gray')
-        axs[1, 2].set_title("Sharpened Image")
+        axs[0, 2].imshow(sharpened_image, cmap='gray')
+        axs[0, 2].set_title("Sharpened Image")
 
         for ax in axs.flat:
             ax.axis('off')
 
         plt.tight_layout()
         plt.show()
+    
+    return "Saved_Images/processed_image_with_text.jpg"
