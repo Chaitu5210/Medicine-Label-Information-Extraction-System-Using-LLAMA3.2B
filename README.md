@@ -26,6 +26,7 @@ Before you begin, ensure you have the following installed:
 - **Python 3.7 or higher**
 - **Ollama**: Install it following the instructions on the [Ollama website](https://ollama.com/docs/getting-started).
 - **LLaMA 3.2 model**: Pull the model using the command:
+  
   ```bash
   ollama pull llama3.2
 
