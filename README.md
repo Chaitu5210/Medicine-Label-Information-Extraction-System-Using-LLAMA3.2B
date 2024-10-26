@@ -1,3 +1,4 @@
+
 # Medicine Information Extraction System
 
 ## Overview
@@ -13,22 +14,24 @@ The Medicine Information Extraction System is designed to extract and provide de
 
 ## Technologies Used
 
-- Python
-- OpenCV
-- Tesseract OCR
-- Pandas
-- Matplotlib
-- Ollama for LLaMA models
+- **Python**
+- **OpenCV**
+- **Tesseract OCR**
+- **Pandas**
+- **Matplotlib**
+- **Ollama for LLaMA models**
 
 ## Prerequisites
+
 Before you begin, ensure you have the following installed:
 
 - **Python 3.7 or higher**
 - **Ollama**: Install it following the instructions on the [Ollama website](https://ollama.com/docs/getting-started).
 - **LLaMA 3.2 model**: Pull the model using the command:
-  
+
   ```bash
   ollama pull llama3.2
+  ```
 
 ## Requirements
 
@@ -40,3 +43,43 @@ opencv-python==4.5.3.20210920
 pandas==1.3.3
 matplotlib==3.4.3
 gdown==4.2.0
+```
+
+## Setup
+
+1. Clone this repository:
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
+
+2. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+Run the script:
+
+```bash
+python your_script_name.py
+```
+
+1. The script will prompt you to enter the path to your medicine image (e.g., `Dataset/TestImg.jpg`).
+2. The system will process the image, extract the text, and identify the medicine name.
+3. You will then be prompted to enter the ID of the medicine to retrieve detailed information.
+4. The system will display a user-friendly description of the selected medicine, including its:
+   - **Name**
+   - **Potential Substitutes**
+   - **Key Uses**
+   - **Benefits**
+   - **Side Effects**
+   - **Precautions**
+   - **Expiry Information**
+
+---
+
+**Note**: This system is intended for educational purposes only and should not replace professional medical advice.
