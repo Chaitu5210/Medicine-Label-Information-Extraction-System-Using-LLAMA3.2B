@@ -50,8 +50,8 @@ gdown==4.2.0
 1. Clone this repository:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Chaitu5210/Tablet-Insight-Engine.git
+   cd Tablet-Insight-Engine
    ```
 
 2. Install the required packages:
@@ -65,7 +65,7 @@ gdown==4.2.0
 Run the script:
 
 ```bash
-python your_script_name.py
+python main.py
 ```
 
 1. The script will prompt you to enter the path to your medicine image (e.g., `Dataset/TestImg.jpg`).
